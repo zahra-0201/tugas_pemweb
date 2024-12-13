@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    margin: 3rem;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px;
+}
+.animal {
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+}
+.animal img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.animal p {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.custom-button {
+    background-color: pink; 
+    border: none;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    color: black;
+}
+
+.custom-button:hover {
+    background-color: palevioletred;
+}

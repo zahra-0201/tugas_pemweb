@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animal.css">
+    <title>Sound Zahra</title>
+</head>
+<body>
+    <header>
+        <h1>Click on one of the animal pictures or the button below!</h1><br>
+        <h2>by clicking, you can hear the sound of the animal in the picture.</h2>
+    </header>
+    <div class="animal-container">
+        <div class="animal" onclick="playSound('cat')">
+            <img src="img/kitten.jpg" alt="Kucing">
+            <div class="container">
+                <button class="custom-button" id="tombol-suara">Cat</button>
+            </div>
+        </div>
+        <div class="animal" onclick="playSound('dog')">
+            <img src="img/dog.jpg" alt="Anjing">
+            <div class="container">
+                <button class="custom-button" id="tombol-suara">Dog</button>
+            </div>
+        </div>
+        <div class="animal" onclick="playSound('horse')">
+            <img src="img/horse.jpg" alt="Kuda">
+            <div class="container">
+                <button class="custom-button" id="tombol-suara">Horse</button>
+            </div>
+        </div>
+        <div class="animal" onclick="playSound('bird')">
+            <img src="img/bird.jpg" alt="Burung">
+            <div class="container">
+                <button class="custom-button" id="tombol-suara">Bird</button>
+            </div>
+        </div>
+        <div class="animal" onclick="playSound('lion')">
+            <img src="img/lion.jpg" alt="Singa">
+            <div class="container">
+                <button class="custom-button" id="tombol-suara">Lion</button>
+            </div>
+        </div>
+    </div>
+<br>
+<h3 align="center">Zahra Aulia Rahmani | 0110224193</h3>
+<audio id="animalSound"></audio>
+
+<script>
+    function playSound(animal) {
+        // Memainkan suara
+        const sound = document.getElementById("animalSound");
+        sound.src = `sound/${animal}.mp3`;
+        sound.play();
+
+        setTimeout(() => {
+            sound.pause();
+            sound.currentTime = 0; 
+        }, 5000);
+    }
+</script>
+</body>
+</html>
